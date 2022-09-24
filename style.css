@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-bottom: 30px;
+    margin-top: calc(7vh + 30px);
+    text-align: center;
+    font-size: 5vw;
+    /*Shadow*/
+    color: transparent;
+    background: #112;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(139, 241, 255, 0.5);
+}
+
+#phone-numbers {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+hr {
+    width: 70vw;
+    margin: auto;
+    margin-top: 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    animation-name: link-hover-out;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+a:hover {
+    animation-name: link-hover;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+section {
+    margin-bottom: 5vh;
+}
+
+#top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(200, 255, 255);
+}
+
+.top-bar-element {
+    margin: 10px;
+    font-size: 2vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60vw;
+    margin: auto;
+    grid-gap: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: center;
+}
+
+.card-1 {
+    color: white;
+    font-size: 3vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    /*Border*/
+    border-style: solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    /*Shadow*/
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 10px;
+}
+
+.card-2 {
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    width: 25vw;
+    height: 14vh;
+    background-color: rgba(30, 30, 100, 0.3);
+    padding: 2vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-2 p {
+    font-size: 1vw;
+}
+
+#implantologia {
+    background-color: rgb(20, 80, 170);
+    border-color: rgb(20, 80, 170);
+}
+
+#odontoiatria {
+    background-color: rgb(80, 20, 170);
+    border-color: rgb(80, 20, 170);
+}
+
+#ortodonzia {
+    background-color: rgb(170, 20, 80);
+    border-color: rgb(170, 20, 80);
+}
+
+#chisiamo {
+    background-color: #eee;
+    width: 50vw;
+    margin: auto;
+    text-align: justify;
+    font-size: 1vw;
+    padding: 20px;
+}
+
+.blue-title {
+    text-align: center;
+    font-size: 4vw;
+    color: rgb(50, 200, 255);
+    margin: 20px;
+}
+
+.chisiamopart {
+    width: 20vw;
+    margin: auto;
+}
+
+#inostriservizi {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("teeth.jfif");
+    width: 100vw;
+    height: calc(17vh * 8 + 20px * 5);
+}
+
+.white-title {
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding: 60px;
+}
+
+.fixed-bg {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-3 {
+    text-align: center;
+    margin: 40px;
+}
+
+.card-3 img {
+    border-radius: 50%;
+}
+
+@keyframes link-hover {
+    0% {
+        color: #000;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes link-hover-out {
+    0% {
+        color: blue;
+    }
+    100% {
+        color: #000;
+    }
+}
