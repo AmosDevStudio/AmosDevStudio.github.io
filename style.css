@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+* {
+    font-family: 'Inter Tight', sans-serif;
+    color: white;
+    background-color: #222;
+}
+
+h1 {
+    font-size: 5vw;
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 5vw;
+}
+
+header p {
+    text-align: right;
+    font-size: 2vw;
+}
+
+header {
+    width: 40vw;
+    height: 100vh;
+    margin: auto;
+}
