@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 * {
+    overflow-x: hidden;
+}
+
+body {
     font-family: 'Inter Tight', sans-serif;
-    color: white;
-    background-color: #222;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-5vh);
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, transform 0.9s ease-out;
+    will-change: opacity, visibility;
+}
+
+.no-moving {
+    transform: none;
+}
+
+.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
 }
 
 h1 {
@@ -10,18 +31,173 @@ h1 {
     margin: 0;
 }
 
-header h1 {
+h2 {
+    font-size: 3vw;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+}
+
+header {
+    font-family: 'Caveat', cursive;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+}
+
+header a {
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+#title h1 {
     text-align: center;
     padding-top: 5vw;
 }
 
-header p {
+#title p {
     text-align: right;
     font-size: 2vw;
 }
 
-header {
+#title {
     width: 40vw;
-    height: 100vh;
     margin: auto;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.slides {
+    position: relative;
+}
+
+.indicator {
+    width: 2vw;
+    height: 2vw;
+    padding: 0;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.indicator:hover {
+    background: white;
+}
+
+.white-bg {
+    background: white;
+}
+
+.move {
+    position: relative;
+    bottom: 10px;
+    transform: translateY(-100%);
+    width: 6vw;
+    height: 6vw;
+    font-size: 3vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: transparent;
+    transition: 0.3s;
+}
+
+.move:hover {
+    color: rgb(233, 183, 108);
+}
+
+#home {
+    background: linear-gradient(135deg, hsla(245, 97%, 63%, 0.65), hsla(30, 96%, 62%, 0.65)), url("imgs/website-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 10%;
+    background-color: white;
+    color: white;
+    padding-bottom: 10vw;
+    margin: 0;
+    border: 0;
+}
+
+#go-left {
+    float: left;
+    left: 10px;
+}
+
+#go-right {
+    float: right;
+    right: 10px;
+}
+
+#slideshow {
+    width: 50vw;
+    margin: auto;
+}
+
+#indicator-container {
+    position: relative;
+    float: left;
+    left: calc(50% - 10px - 6vw);
+    bottom: 10px;
+    transform: translate(-50%, -100%);
+    background: transparent;
+}
+
+.slideh2 {
+    position: absolute;
+    text-align: center;
+    background: linear-gradient(200deg, rgba(17, 17, 17, 0.2), rgba(51, 51, 51, 0.9));
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#fitness {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+#mindfulness {
+    left: 75%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+}
+
+#business {
+    left: 26%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+}
+
+#family {
+    left: 80%;
+    transform: translateX(-50%);
+    top: 20%;
+}
+
+#culture {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+#philosophy {
+    left: 80%;
+    transform: translateX(-50%);
+    top: 20%;
 }

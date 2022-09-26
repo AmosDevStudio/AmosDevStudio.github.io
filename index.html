@@ -10,14 +10,56 @@
 </head>
 
 <body>
-    <header id="home">
-        <h1>Improve yourself</h1>
-        <p>.tk</p>
+    <header class="fade-in">
+        <h2>improveyourself.tk</h2>
+        <a href="#home">Home</a>
     </header>
-    <section>
-
+    <section class="fade-in no-moving" id="home">
+        <div class="fade-in">
+            <div id="title">
+                <h1>Improve yourself</h1>
+                <p>.tk</p>
+            </div>
+            <div id="slideshow">
+                <div class="slides">
+                    <img src="imgs/fitness.jpg">
+                    <h2 class="slideh2" id="fitness">Fitness</h2>
+                </div>
+                <div class="slides">
+                    <img src="imgs/mindfulness.jpg">
+                    <h2 class="slideh2" id="mindfulness">Mindfullness</h2>
+                </div>
+                <div class="slides">
+                    <img src="imgs/business.jpg">
+                    <h2 class="slideh2" id="business">Business</h2>
+                </div>
+                <div class="slides">
+                    <img src="imgs/culture.jpg">
+                    <h2 class="slideh2" id="culture">Culture</h2>
+                </div>
+                <div class="slides">
+                    <img src="imgs/family.jpg">
+                    <h2 class="slideh2" id="family">Family</h2>
+                </div>
+                <div class="slides">
+                    <img src="imgs/philosophy.jpg">
+                    <h2 class="slideh2" id="philosophy">Philosophy</h2>
+                </div>
+                <button class="move" id="go-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="move" id="go-right" onclick="plusDivs(+1)">&#10095;</button>
+                <div id="indicator-container">
+                    <button class="indicator" onclick="currentDiv(0)"></button>
+                    <button class="indicator" onclick="currentDiv(1)"></button>
+                    <button class="indicator" onclick="currentDiv(2)"></button>
+                    <button class="indicator" onclick="currentDiv(3)"></button>
+                    <button class="indicator" onclick="currentDiv(4)"></button>
+                    <button class="indicator" onclick="currentDiv(5)"></button>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
