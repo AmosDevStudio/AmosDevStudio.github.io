@@ -45,6 +45,7 @@ button {
 header {
     font-family: 'Caveat', cursive;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 1;
     width: 100vw;
