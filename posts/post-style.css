@@ -9,7 +9,7 @@ body {
     background-color: #e5e5f7;
     background-color: #e5e5f7;
     background-image: linear-gradient(#f4f744 1px, transparent 1px), linear-gradient(to right, #f7f444 1px, #ffffff 1px);
-    background-size: 5vmax 5vmax;
+    background-size: 3vmax 3vmax;
     font-family: 'InterTight', sans-serif;
 }
 
@@ -29,6 +29,14 @@ footer {
     width: 70vw;
     margin: auto;
     padding: 2vw;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.5vmax;
 }
 
 h1 {
